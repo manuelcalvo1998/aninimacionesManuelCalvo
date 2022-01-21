@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: gray;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.btn{
+    box-sizing: border-box;
+    border: 2px solid #663399;
+    border-radius: 0,6rem;
+    cursor: pointer;
+    display: inline-block;
+    align-self: center;
+    font-size: larger;
+    margin: 1rem;
+    padding: 1.2rem 3rem;
+    text-transform: uppercase;
+}
+.btn:hover, .btn:focus{
+    color: white;
+}
+
+.bt-1{
+    color: white;
+    background-image: linear-gradient(to top right, green, red);
+    background-position: 0 0;
+    background-size: 100%;
+    transition: background 300ms  ease-in-out;
+}
+.bt-1:hover{
+    background-position: 100px;
+}
+
+.bt-2{
+    color: white;
+    background: rgb(2,0,36);
+background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 90%);
+background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 90%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 90%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    background-position: 0 0;
+    background-size: 100%;
+    transition: background 300ms  ease-in-out;
+}
+.bt-2:hover{
+    background-position: 100px;
+}
+
+.bt-3{
+    color: white;
+    background: rgb(238,174,202);
+background: -moz-linear-gradient(90deg, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 80%);
+background: -webkit-linear-gradient(90deg, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 80%);
+background: linear-gradient(90deg, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 80%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+    background-position: 0 0;
+    background-size: 100%;
+    transition: background 300ms  ease-in-out;
+}
+.bt-3:hover{
+    background-position: 100px;
+}
+
+
+.cuadrado{
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.punto-1{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: mover;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.punto-2{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: mover2;
+    animation-duration: 6s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover {
+    20%{
+        transform: translate(380px,70px);
+        background-color: blueviolet;
+    }
+    40%{
+        transform: translate(0px,140px);
+        background-color: green;
+    }
+    60%{
+        transform: translate(380px,210px);
+        background-color: red;
+    }
+    80%{
+        transform: translate(0px,280px);
+        background-color: orange;
+    }
+    100%{
+        transform: translate(380px,380px);
+        background-color: white;
+    }
+}
+
+
+@keyframes mover2 {
+    20%{
+        transform: translate(380px,70px);
+        background-color: blueviolet;
+    }
+    40%{
+        transform: translate(0px,140px);
+        background-color: green;
+    }
+    60%{
+        transform: translate(380px,210px);
+        background-color: red;
+    }
+    80%{
+        transform: translate(0px,280px);
+        background-color: orange;
+    }
+    100%{
+        transform: translate(380px,380px);
+        background-color: white;
+    }
+}
